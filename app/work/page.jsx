@@ -32,24 +32,24 @@ const projects = [
   },
   {
     num: "02",
-    catergory: "fullstack",
+    catergory: "LinguaEd",
     title: "project 2",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi.",
-    stack: [{ name: "Html 5" }, { name: "Talwind.css" }, { name: "Node.js" }],
+      "LinguaEd was Built Using Next JS, and Tailwing CSS",
+    stack: [{ name: "Shadcn" }, { name: "Talwind.css" }, { name: "Next.js" }, { name: "Wordpress" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://lingua-ed.vercel.app/",
+    github: "https://github.com/AtereD/lingua-ed",
   },
   {
     num: "03",
-    catergory: "frontend",
+    catergory: "Weather App",
     title: "project 3",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, excepturi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+      "A Weather App Built Using React JS, Tailwind CSS and OpenWeatherMap API",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" },],
     image: "/assets/work/thumb3.png",
-    live: "",
+    live: "https://dweatherapp.netlify.app/",
     github: "",
   },
 ];
@@ -73,8 +73,8 @@ const Work = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
-      <div className="conatiner mx-auto">
-        <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+      <div className="conatiner mx-auto w-full">
+        <div className="flex flex-col xl:flex-row xl:gap-[30px] ">
           {/* text */}
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%] ">
@@ -102,7 +102,7 @@ const Work = () => {
             {/* Buttons */}
             <div className="flex items-center gap-4">
               {/* live project btn */}
-              <Link href={project.live}>
+              <Link href={project.live} target="_blank">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -115,7 +115,7 @@ const Work = () => {
                 </TooltipProvider>
               </Link>
               {/* github btn */}
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank">
                 <TooltipProvider delayDuration={100}>
                   <Tooltip>
                     <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -132,7 +132,7 @@ const Work = () => {
           </div>
 
           {/* slider */}
-          <div className="w-full xl:w-[50%] max-w-prose">
+          <div className="w-full xl:w-[50%] ">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
@@ -141,7 +141,7 @@ const Work = () => {
             >
               {projects.map((project, index) => {
                 return <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[400px] relative group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">

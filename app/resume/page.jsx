@@ -202,7 +202,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[190px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent-DEFAULT">
                             {item.duration}
@@ -235,7 +235,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[200px] xl:h-[250px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[205px] xl:h-[250px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent-DEFAULT">
                             {item.duration}
@@ -270,7 +270,7 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group hover:scale-90 duration-300">
                               <div className="text-6xl group-hover:text-accent-DEFAULT transition-all duration-300">
                                 {skill.icon}
                               </div>

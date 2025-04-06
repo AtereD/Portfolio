@@ -37,10 +37,12 @@ const info = [
 
 import { useForm, ValidationError } from "@formspree/react";
 import { useRouter } from "next/navigation";
+import { FaSpinner } from "react-icons/fa";
 
 const Contact = () => {
   const router = useRouter();
   const [state, handleSubmit] = useForm("mldjpyon");
+  
 
   useEffect(() => {
     if (state.succeeded) {
@@ -76,19 +78,15 @@ const Contact = () => {
               </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input
-                  type="firstname"
-                  placeholder="Firstname"
-                  name="firstname"
-                />
-                <Input type="lastname" placeholder="Lastname" name="lastname" />
+                <Input type="text" placeholder="Firstname" name="firstname" />
+                <Input type="text" placeholder="Lastname" name="lastname" />
                 <Input type="email" placeholder="Email" name="email" />
                 <ValidationError
                   prefix="Email"
                   field="email"
                   errors={state.errors}
                 />
-                <Input type="phone" placeholder="Phone number" name="phone" />
+                <Input type="tel" placeholder="Phone number" name="phone" />
                 <ValidationError
                   prefix="phone"
                   field="phone"
@@ -125,9 +123,16 @@ const Contact = () => {
                 size="md"
                 className="max-w-40"
                 type="submit"
-                disabled={state.submitting}
+                disabled={state.submitting || state.succeeded}
               >
-                Send message
+                 {state.submitting ? (
+    <>
+      <FaSpinner className="animate-spin text-primary" />
+      Sending...
+    </>
+  ) : (
+    "Send message"
+  )}
               </Button>
             </form>
           </div>
