@@ -7,9 +7,9 @@
   --breakpoint-md: 760px;
   --breakpoint-lg: 968px;
   --breakpoint-xl: 1200px;
-  --color-primary: #1c1c22;
-  --color-accent-DEFAULT: #00ff99;
-  --color-accent-hover: #00e187
+  --color-primary: #0c0c0d;
+  --color-accent-DEFAULT: #eece1a;
+  --color-accent-hover: #bda207;
 }
 
 @theme inline {
@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply font-primary bg-[#0c0c0d] text-white leading-loose;
+    @apply font-primary bg-primary text-white leading-loose;
   }
   .h1 {
     @apply text-[46px] xl:text-[80px] leading-[1.1] font-semibold;
@@ -35,7 +35,7 @@
   }
   
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1px #eece1a;
   }
   
 }
