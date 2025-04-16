@@ -21,6 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/dami_logo.ico'/>
+      </head>
       <body
         className={`${jetbrainsMono.variable} py-2 px-3 xl:px-2`}
       >

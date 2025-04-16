@@ -3,26 +3,26 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { useEffect } from "react";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectGroup,
+//   SelectItem,
+//   SelectLabel,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
+import { useForm } from "react-hook-form";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+234) 813 859 0395",
-  },
+  // {
+  //   icon: <FaPhoneAlt />,
+  //   title: "Phone",
+  //   description: "(+234) 813 859 0395",
+  // },
   {
     icon: <FaEnvelope />,
     title: "Email",
@@ -35,20 +35,26 @@ const info = [
   },
 ];
 
-import { useForm, ValidationError } from "@formspree/react";
 import { useRouter } from "next/navigation";
-import { FaSpinner } from "react-icons/fa";
 
 const Contact = () => {
   const router = useRouter();
-  const [state, handleSubmit] = useForm("mldjpyon");
-  
 
-  useEffect(() => {
-    if (state.succeeded) {
-      router.push("/contact/success");
+  const {
+    register,
+    trigger,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (e) => {
+    const isValid = await trigger();
+    if (!isValid) {
+      e.preventDefault();
     }
-  }, [state.succeeded, router]);
+    if (isValid) {
+      router.push('/contact/success')
+    }
+  };
 
   return (
     <motion.section
@@ -60,14 +66,15 @@ const Contact = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px]">
+        <div className="flex flex-col lg:flex-row gap-0">
           {/* form */}
-          <div className="xl:w-[54%] order-2 xl:order-none">
+          <div className="lg:w-[53%] order-2 lg:order-none">
             <form
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
-              onSubmit={handleSubmit}
-              action="https://formspree.io/f/mldjpyon"
+              onSubmit={onSubmit}
+              action="https://formsubmit.co/dc7abb080f58ee94328c6262046c8e1a"
               method="POST"
+              target="_blank"
             >
               <h3 className="text-4xl text-accent-DEFAULT">
                 Let's work together
@@ -78,23 +85,47 @@ const Contact = () => {
               </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="text" placeholder="Firstname" name="firstname" />
-                <Input type="text" placeholder="Lastname" name="lastname" />
-                <Input type="email" placeholder="Email" name="email" />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
+                <Input
+                  type="text"
+                  placeholder="Name"
+                  {...register("name", {
+                    required: true,
+                    maxLength: 100,
+                  })}
                 />
-                <Input type="tel" placeholder="Phone number" name="phone" />
-                <ValidationError
-                  prefix="phone"
-                  field="phone"
-                  errors={state.errors}
+                {errors.name && (
+                  <p className="mt-1 text-primary-500">
+                    {errors.name.type === "required" &&
+                      "This field is required"}
+                    {errors.name.type === "maxLength" &&
+                      "Max length is 100 char."}
+                  </p>
+                )}
+
+                <Input
+                  type="text"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: true,
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  })}
                 />
+                {errors.email && (
+                  <p className="mt-1 text-primary-500">
+                    {errors.email.type === "required" &&
+                      "This field is required"}
+                    {errors.email.type === "pattern" && "Wrong Email Address"}
+                  </p>
+                )}
+                <Input
+                  type="hidden"
+                  name="_autoresponse"
+                  value="Thank you reaching out, I'd get back to you soon!"
+                />
+                <Input type="hidden" name="_template" value="table" />
               </div>
               {/* Select */}
-              <Select name="service">
+              {/* <Select name="service">
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
@@ -106,38 +137,33 @@ const Contact = () => {
                     <SelectItem value="mst">Logo Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
-              </Select>
+              </Select> */}
               {/* textarea */}
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here."
                 name="message"
+                {...register("message", {
+                  required: true,
+                  maxLength: 2000,
+                })}
               />
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
+              {errors.message && (
+                <p className="mt-1 text-primary-500">
+                  {errors.message.type === "required" &&
+                    "This field is required"}
+                  {errors.message.type === "maxLength" &&
+                    "Max length is 2000 char."}
+                </p>
+              )}
               {/* btn */}
-              <Button
-                size="md"
-                className="max-w-40"
-                type="submit"
-                disabled={state.submitting || state.succeeded}
-              >
-                 {state.submitting ? (
-    <>
-      <FaSpinner className="animate-spin text-primary" />
-      Sending...
-    </>
-  ) : (
-    "Send message"
-  )}
+              <Button size="md" className="max-w-40" type="submit">
+                Send
               </Button>
             </form>
           </div>
           {/* info */}
-          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (

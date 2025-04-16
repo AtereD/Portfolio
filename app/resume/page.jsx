@@ -26,7 +26,7 @@ const about = {
     },
     {
       fieldName: "Name",
-      fieldValue: "(+234) 813 859 0395",
+      fieldValue: "(+234) 912 168 1463",
     },
     {
       fieldName: "Experience",
@@ -40,10 +40,10 @@ const about = {
       fieldName: "Freelance",
       fieldValue: "Available",
     },
-    {
-      fieldName: "Language",
-      fieldValue: "English & Yoruba",
-    },
+    // {
+    //   fieldName: "Language",
+    //   fieldValue: "English & Yoruba",
+    // },
   ],
 };
 
@@ -75,7 +75,7 @@ const experience = {
     {
       company: "Wootlab Innovations",
       position: "Software Developer Intern",
-      duration: "Spring 2022",
+      duration: "April 2022 - June 2022",
     },
   ],
 };
