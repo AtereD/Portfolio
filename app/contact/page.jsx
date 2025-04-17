@@ -173,7 +173,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
-                      <h3 className="md:text-xl text-lg">{item.description}</h3>
+                      <h3 className="md:text-xl text-base">{item.description}</h3>
                     </div>
                   </li>
                 );
