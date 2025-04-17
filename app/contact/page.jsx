@@ -66,11 +66,11 @@ const Contact = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-0">
+        <div className="flex flex-col lg:flex-row gap-0 w-full">
           {/* form */}
-          <div className="lg:w-[53%] order-2 lg:order-none">
+          <div className="lg:w-[53%] order-2 lg:order-none w-full">
             <form
-              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              className="flex flex-col gap-6 md:p-10 bg-[#27272c] rounded-xl py-8 px-5"
               onSubmit={onSubmit}
               action="https://formsubmit.co/dc7abb080f58ee94328c6262046c8e1a"
               method="POST"
@@ -163,17 +163,17 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
-          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 xl:mb-0">
+          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 xl:mb-0 px-4 md:px-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
                 return (
-                  <li key={index} className="flex items-center gap-6 ">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent-DEFAULT rounded-md flex items-center justify-center">
+                  <li key={index} className="flex items-center md:gap-6 gap-4 ">
+                    <div className="md:w-[52px] md:h-[52px] xl:w-[72px] xl:h-[72px] md:bg-[#27272c] text-accent-DEFAULT rounded-md flex items-center justify-center w-4 h-4">
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-xl">{item.description}</h3>
+                      <h3 className="md:text-xl text-lg">{item.description}</h3>
                     </div>
                   </li>
                 );

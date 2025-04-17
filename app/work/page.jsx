@@ -48,7 +48,7 @@ const projects = [
     description:
       "Evogym is a responsive landing page built with typescript, react.js. tailwind css and framer motion",
     stack: [{ name: "React.js" }, { name: "Tailwind.css" }, {name: "framer-motion"}],
-    image: "/assets/work/thumb4.png.png",
+    image: "/assets/work/thumb4.png",
     live: "https://evo-typescript.netlify.app/",
     github: "https://github.com/AtereD/Evo-typescript",
   },
