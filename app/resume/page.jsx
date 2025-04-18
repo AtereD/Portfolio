@@ -270,8 +270,8 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group hover:scale-90 duration-300">
-                              <div className="text-6xl group-hover:text-accent-DEFAULT transition-all duration-300">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group md:hover:scale-90 duration-300 active:scale-90 md:active:scale-none">
+                              <div className="text-6xl group-hover:text-accent-DEFAULT transition-all duration-300 group-active:text-accent-DEFAULT ">
                                 {skill.icon}
                               </div>
                             </TooltipTrigger>
@@ -293,7 +293,7 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="md:max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 ">
@@ -301,10 +301,10 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className="flex md:items-center md:justify-center xl:justify-start gap-4"
                       >
                         <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
+                        <span className="md:text-xl text-[15px]">{item.fieldValue}</span>
                       </li>
                     );
                   })}
