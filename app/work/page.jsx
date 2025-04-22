@@ -61,7 +61,7 @@ const projects = [
     stack: [{ name: "React.js" }, { name: "Tailwind.css" },],
     image: "/assets/work/thumb3.png",
     live: "https://dweatherapp.netlify.app/",
-    github: "",
+    github: "https://github.com/AtereD/DWeatherApp",
   },
 ];
 
