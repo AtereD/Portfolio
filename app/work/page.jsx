@@ -21,8 +21,19 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    catergory: "Deebrew Coffee Website",
+    catergory: "React-Admin Dashboard",
     title: "project 1",
+    description:
+      "Built and Deployed a responsive Admin Panel App using React, TailwindCSS, and Syncfusion with Theming, Tables, Charts, Calendar, Kaban components. It has one Dashboard, Three Pages, Four Apps, and Seven fully functional charts!",
+    stack: [{ name: "React.js" }, { name: "Tailwind.css" }, { name: "Syncfusion" }],
+    image: "/assets/work/thumb5.png",
+    live: "https://react-admin89.netlify.app",
+    github: "https://github.com/AtereD/react-admin",
+  },
+  {
+    num: "02",
+    catergory: "Deebrew Coffee Website",
+    title: "project 2",
     description:
       "Developed a responsive modern website for DeeBrew, a coffee brand with Next.js and Tailwindcss",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Gsap" }, { name: "Framer Motion" }],
@@ -31,7 +42,7 @@ const projects = [
     github: "https://github.com/AtereD/Deebrew-Landing",
   },
   {
-    num: "02",
+    num: "03",
     catergory: "LinguaEd",
     title: "project 2",
     description:
@@ -42,7 +53,7 @@ const projects = [
     github: "https://github.com/AtereD/lingua-ed",
   },
   {
-    num: "03",
+    num: "04",
     catergory: "Typescript(EVOGYM Website)",
     title: "project 3",
     description:
@@ -53,7 +64,7 @@ const projects = [
     github: "https://github.com/AtereD/Evo-typescript",
   },
   {
-    num: "04",
+    num: "05",
     catergory: "Weather App",
     title: "project 4",
     description:
