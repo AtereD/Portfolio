@@ -38,12 +38,19 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", ],
     image: "/assets/work/construction.svg",
     live: "https://wole-oke-construction.vercel.app/",
-  
   },
   {
-    id:2,
-    catergory: "React-Admin Dashboard",
-    title: "project 1",
+     id:2,
+    title: "viRtual Website",
+    description:
+      "",
+    iconLists: ["/vite.svg", "/tail.svg", ],
+    image: "/assets/work/virtual.svg",
+    live: "https://virtual-tau-ecru.vercel.app/"
+  },
+  {
+    id:3,
+    title: "React-Admin Dashboard",
     description:
       "Built and Deployed a responsive Admin Panel App using React, TailwindCSS, and Syncfusion with Theming, Tables, Charts, Calendar, Kaban components. It has one Dashboard, Three Pages, Four Apps, and Seven fully functional charts!",
     iconLists: ["/re.svg", "/tail.svg", ],
@@ -52,42 +59,38 @@ export const projects = [
    
   },
   {
-    id:3,
-    catergory: "Deebrew Coffee Website",
-    title: "project 2",
+    id:4,
+    title: "Deebrew Coffee Website",
     description:
       "Developed a responsive modern website for DeeBrew, a coffee brand with Next.js and Tailwindcss",
-    iconLists: ["/re.svg", "/tail.svg", ],
+    iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
     image: "/assets/work/thumb1.png",
     live: "https://deebrew-landing.vercel.app/",
     
   },
   {
-    id:4,
-    catergory: "LinguaEd",
-    title: "project 2",
+    id:5,
+    title: "LinguaEd",
     description:
       "LinguaEd was Built Using Next JS, and Tailwing CSS",
-    iconLists: ["/re.svg", "/tail.svg", ],
+    iconLists: ["/next.svg", "/tail.svg", ],
     image: "/assets/work/thumb2.png",
     live: "https://lingua-ed.vercel.app/",
    
   },
   {
-    id:5,
-    catergory: "Typescript(EVOGYM Website)",
-    title: "project 3",
+    id:6,
+    title: "Typescript(EVOGYM Website)",
     description:
       "Evogym is a responsive landing page built with typescript, react.js. tailwind css and framer motion",
-    iconLists: ["/re.svg", "/tail.svg", ],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg" ],
     image: "/assets/work/thumb4.png",
     live: "https://evo-typescript.netlify.app/",
   
   },
   {
-    id:6,
-    catergory: "Weather App",
-    title: "project 4",
+    id:7,
+    title: "Weather App",
     description:
       "This Weather App Was Built Using React JS, Tailwind CSS and OpenWeatherMap API",
     iconLists: ["/re.svg", "/tail.svg", ],
