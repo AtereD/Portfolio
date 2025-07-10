@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <section className="h- mb-8">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center xl:pt-8 lg:pb-24 justify-between">
+        <div className="flex flex-col xl:flex-row items-center xl:pt-8 lg:pb-24 justify-center">
           {/* text */}
-          <div className="text-center  order-2 xl:order-none">
+          <div className="text-center  order-2 xl:order-none max-w-[89vw] md:max-w-2xl lg:max-w-[60vw]">
             <span className="text-lg">Software Developer</span>
             
             <h1 className="h1 lg:mb-6 mb-4">

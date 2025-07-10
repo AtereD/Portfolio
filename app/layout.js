@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/dami_logo.ico' type='icon'/>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  py-2 px-3 xl:px-2 h-screen`}
+        className={`${geistSans.variable}  py-2 px-3 xl:px-2`}
       >
         <Header />
         <StairTransition />

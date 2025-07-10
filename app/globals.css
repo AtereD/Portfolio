@@ -13,7 +13,7 @@
 }
 
 @theme inline {
-    --font-primary: var(--font-geist-mono);
+    --font-primary: var(--font-geist-sans);
 
 }
 
