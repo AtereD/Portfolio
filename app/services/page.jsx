@@ -2,37 +2,8 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { services } from "@/constant";
 
-const services = [
-  {
-    num: "01",
-    title: "Frontend Web Development",
-    description:
-      "Building sleek, responsive websites with pixel-perfect precision and seamless user interactions",
-    href: "",
-  },
-  {
-    num: "02",
-    title: "UI/UX Design",
-    description:
-      "Designing intuitive, user-first interfaces that blend beauty with functionality across all devices",
-    href: "",
-  },
-  // {
-  //   num: "03",
-  //   title: "Logo Design",
-  //   description:
-  //     "Crafting bold, memorable logos that capture the essence of your brand in a single glance.",
-  //   href: "",
-  // },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Optimizing your online presence to climb search rankings and connect with the right audience.",
-    href: "",
-  },
-];
 
 const Services = () => {
   return (

@@ -13,16 +13,16 @@
 }
 
 @theme inline {
-    --font-primary: var(--font-jetbrainsMono);
+    --font-primary: var(--font-geist-mono);
 
 }
 
 @layer base {
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary bg-primary/95 text-white leading-loose;
   }
   .h1 {
-    @apply text-[46px] xl:text-[80px] leading-[1.1] font-semibold;
+    @apply text-[46px] lg:text-[50px] leading-[1.1] font-semibold;
   }
   .h2 {
     @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
@@ -38,6 +38,34 @@
     -webkit-text-stroke: 1px #eece1a;
   }
   
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl text-center;
+  }
+
+  /* .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  } */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eece1a !important;        /* Set the color */
+  top: 50% !important;              /* Vertically center */
+  transform: translateY(-50%) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;       /* Adjust arrow size */
 }
 
 

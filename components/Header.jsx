@@ -3,6 +3,7 @@ import { Button } from "./ui/button"
 
 import Nav from "./Nav"
 import MobileNav from "./MobileNav"
+import Photo from "./Photo"
 
 const Header = () => {
   return (
@@ -10,7 +11,7 @@ const Header = () => {
         <div className="container flex justify-between items-center mx-auto">
             {/* logo */}
             <Link href=''>
-            <h1 className="text-4xl font-semibold ">
+            <h1 className="text-3xl font-semibold ">
                 Dami<span className="text-accent-DEFAULT">.</span>
             </h1>
             </Link>
@@ -19,9 +20,7 @@ const Header = () => {
             {/* desktop nav */}
             <div className="hidden lg:flex items-center gap-8">
                 <Nav />
-                <Link href="/contact">
-                    <Button>Hire me</Button>
-                </Link>
+                <Photo/>
             </div>
 
             {/* mobile nav */}

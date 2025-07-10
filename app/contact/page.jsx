@@ -1,5 +1,7 @@
 "use client";
-
+import { useState } from "react";
+import { IoCopyOutline } from "react-icons/io5";
+import animationData from "@/constant/confetti.json"
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -13,6 +15,9 @@ import { Textarea } from "@/components/ui/textarea";
 //   SelectValue,
 // } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
+import Lottie from "react-lottie";
+import { cn } from "@/lib/utils";
+import MagicButton from "@/components/ui/MagicButton";
 
 import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -56,6 +61,23 @@ const Contact = () => {
     }
   };
 
+  const [copied, setCopied] = useState(false);
+
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const handleCopy = () => {
+    const text = "ateredamilola4d@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -66,23 +88,23 @@ const Contact = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-0 w-full">
+        <div className="flex flex-col w-full justify-center px-4 lg:px-0">
           {/* form */}
-          <div className="lg:w-[53%] order-2 lg:order-none w-full">
+          <div className=" w-full flex justify-center items-center">
             <form
-              className="flex flex-col gap-6 md:p-10 bg-[#27272c] rounded-xl py-8 px-5"
+              className="flex flex-col gap-6 md:p-10 bg-[#27272c] rounded-xl py-8 px-5 md:items-center "
               onSubmit={onSubmit}
               action="https://formsubmit.co/dc7abb080f58ee94328c6262046c8e1a"
               method="POST"
               target="_blank"
             >
-              <h3 className="text-4xl text-accent-DEFAULT">
-                Let's work together
+              <h3 className="text-4xl text-accent-DEFAULT text-center">
+                Let's work together!!
               </h3>
-              <p className="text-white/60">
-                I am available for freelance or full-time positions. Contact me
-                and let's talk..
+              <p className="text-white/60 text-center">
+                I am available for freelance or full-time positions.
               </p>
+
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input
@@ -124,20 +146,7 @@ const Contact = () => {
                 />
                 <Input type="hidden" name="_template" value="table" />
               </div>
-              {/* Select */}
-              {/* <Select name="service">
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select> */}
+
               {/* textarea */}
               <Textarea
                 className="h-[200px]"
@@ -157,29 +166,17 @@ const Contact = () => {
                 </p>
               )}
               {/* btn */}
-              <Button size="md" className="max-w-40" type="submit">
+              <Button size="md" className="max-w-40 " type="submit">
                 Send
               </Button>
+
+               {/* info */}
+          
             </form>
+
+           
           </div>
-          {/* info */}
-          <div className="flex-1 flex items-center lg:justify-end order-1 lg:order-none mb-8 xl:mb-0 px-4 md:px-0">
-            <ul className="flex flex-col gap-10">
-              {info.map((item, index) => {
-                return (
-                  <li key={index} className="flex items-center md:gap-6 gap-4 ">
-                    <div className="md:w-[52px] md:h-[52px] xl:w-[72px] xl:h-[72px] md:bg-[#27272c] text-accent-DEFAULT rounded-md flex items-center justify-center w-4 h-4">
-                      <div className="text-[28px]">{item.icon}</div>
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
-                      <h3 className="md:text-xl text-base">{item.description}</h3>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          
         </div>
       </div>
     </motion.section>
