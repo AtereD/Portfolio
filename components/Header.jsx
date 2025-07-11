@@ -7,7 +7,7 @@ import Photo from "./Photo"
 
 const Header = () => {
   return (
-    <header className="py-8 lg:py-12 text-white">
+    <header className="pt-4 pb-8 lg:pt-8 xl:py-12 text-white lg:pb-12">
         <div className="container flex justify-between items-center mx-auto">
             {/* logo */}
             <Link href=''>

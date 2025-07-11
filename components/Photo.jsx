@@ -20,7 +20,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[98px] h-[97px] xl:w-[50px] xl:h-[50px] mix-blend-lighten absolute"
+          className="w-[98px] h-[97px] lg:w-[50px] lg:h-[50px] mix-blend-lighten absolute"
         >
           <Image
             src="/assets/img.png"
@@ -33,7 +33,7 @@ const Photo = () => {
         </motion.div>
 
         {/* circle */}
-        <motion.svg className="w-[100px] xl:w-[50px] h-[100px] xl:h-[50px]" fill="transparent" viewBox="0 0 506 506" xmlns="http://www.w3.org/2000/svg">
+        <motion.svg className="w-[100px] lg:w-[50px] h-[100px] lg:h-[50px]" fill="transparent" viewBox="0 0 506 506" xmlns="http://www.w3.org/2000/svg">
           <motion.circle cx="253" cy="253" r="250" stroke="#bda207" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" initial={{strokeDasharray: "24 10 0 0"}} animate={{strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"], rotate:[120, 360],}} transition={{duration: 20, repeat: Infinity, repeatType: "reverse"}}/>
         </motion.svg>
       </motion.div>

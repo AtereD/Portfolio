@@ -165,7 +165,9 @@ export const services = [
 export const about = {
   title: "About me",
   description:
-    "I'm a web frontend developer passionate about crafting responsive, and user-centric web interfaces. With experience in HTML, CSS, JavaScript, React, and Next.js, I build apps that not only look good but also perform well. I thrive in collaborative settings and love turning ideas into seamless, functional user experiences.",
+    "Hey there👋! I’m Damilola, but most people call me Atere/Dami😊. I'm a software developer who enjoys building clean, responsive, and user-friendly websites. I work mostly with HTML, CSS, JavaScript, React, TailwindCSS and Next.js, tools I use to bring ideas and designs to life in the browser. I love working on projects that focus on great user experiences and strong design. Whether I’m listening to a music, coding solo or collaborating with a team, I find joy in turning creative concepts into real, working products that people enjoy using.",
+
+
   info: [
     {
       fieldName: "Name",
@@ -173,7 +175,7 @@ export const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "ateredamilola7d@gmail.com",
+      fieldValue: "ateredamilola4d@gmail.com",
     },
     {
       fieldName: "Name",
@@ -187,10 +189,10 @@ export const about = {
       fieldName: "Nationality",
       fieldValue: "Nigerian",
     },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
+    // {
+    //   fieldName: "Freelance",
+    //   fieldValue: "Available",
+    // },
     // {
     //   fieldName: "Language",
     //   fieldValue: "English & Yoruba",
@@ -234,36 +236,37 @@ export const experience = {
 export const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "My educational path combines formal academic studies with self-driven learning through online platforms. From earning a Computer Science degree to mastering frontend technologies via Coursera, and project-based courses, I’ve built a strong foundation in both theory and hands-on development.",
+  description:"My journey in tech began with a Computer Science degree and continued through self-taught development, driven by curiosity and practical learning. As I grow in the field, I’m now focusing on earning certifications that reflect my skills and commitment to professional growth.",
+    // "My educational path combines formal academic studies with self-driven learning through online platforms. From earning a Computer Science degree to mastering frontend technologies via Coursera, and project-based courses, I’ve built a strong foundation in both theory and hands-on development.",
   items: [
-    {
-      Institution: "Online Course Platform",
-      position: "Frontend Developer Professional Certificate",
-      duration: "In view",
-    },
-    {
-      Institution: "Online Course Platform (Coursera))",
-      position: " Intro to Software Engineering",
-      duration: "2024",
-    },
-    {
-      Institution: "Online Course Platform (Coursera)",
-      position: "Getting Started with Frontend and Web Development",
-      duration: "2024",
-    },
+    // {
+    //   Institution: "Online Course Platform",
+    //   position: "Frontend Developer Professional Certificate",
+    //   duration: "In view",
+    // },
     {
       Institution: "University of Abuja",
       position: " Bachelor in Computer Science",
       duration: "2018 - 2022",
     },
+    {
+      Institution: "Online Course Platform (Coursera))",
+      position: " Intro to Software Engineering",
+      // duration: "2024",
+    },
+    {
+      Institution: "Online Course Platform (Coursera)",
+      position: "Getting Started with Frontend and Web Development",
+      // duration: "2024",
+    },
+    
   ],
 };
 
 export const skills = {
   title: "My skills",
   description:
-    "I’ve honed a versatile tech stack that empowers me to build responsive, accessible, and performance-optimized interfaces. From foundational web technologies to modern frameworks and design tools, I continuously refine my skill set to stay current and deliver intuitive digital experiences.",
+    "I’ve put together a solid mix of tools and frameworks that help me build 💻 fast, accessible, and responsive interfaces. Always learning, always improving, I enjoy turning ideas into digital experiences people actually enjoy using.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -303,3 +306,67 @@ export const skills = {
     },
   ],
 };
+
+export const gridItems = [
+  {
+    id: 1,
+    title: "I believe great digital experiences starts with great conversations. ",
+    description: "",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/b1.svg",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "I'm very flexible with time zone communications",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 3,
+    title: "My tech stack",
+    description: "I constantly try to improve",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 4,
+    title: "Tech-savvy problem solver with a love for software development.",
+    description: "",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+
+  {
+    id: 5,
+    title: "Currently building a JS Animation library",
+    description: "The Inside Scoop",
+    className: "md:col-span-3 md:row-span-2",
+    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+  },
+  {
+    id: 6,
+    title: "Do you want to start a project together?",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    imgClassName: "",
+    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    img: "",
+    spareImg: "",
+  },
+];

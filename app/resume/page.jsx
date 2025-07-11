@@ -14,6 +14,7 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import Grid from "@/components/Grid";
 
 const Resume = () => {
   return (
@@ -39,6 +40,7 @@ const Resume = () => {
 
           {/* content */}
           <div className="min-h-[70vh] w-full">
+
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -72,6 +74,7 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -105,6 +108,7 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
@@ -134,8 +138,13 @@ const Resume = () => {
                     );
                   })}
                 </ul>
+
+               <div>
+                {/* <Grid/> */}
+               </div>
               </div>
             </TabsContent>
+
             {/* about */}
             <TabsContent
               value="about"

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <section className="h- mb-8">
+    <section className=" mb-8">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center xl:pt-8 lg:pb-24 justify-center">
           {/* text */}
@@ -16,9 +16,12 @@ const Home = () => {
             <span className="text-lg">Software Developer</span>
             
             <h1 className="h1 lg:mb-6 mb-4">
-              I excel in transforming Designs into Effortless 
-               <span className="text-accent-DEFAULT"> {" "}Digital Experiences.</span>
+              Building the web, One <span className="text-accent-DEFAULT"
+              >smooth experience {" "}</span> at a time..
             </h1>
+            {/* <h1 className="h1 lg:mb-6 mb-4">
+              Design meet function--In every <span className="text-accent-DEFAULT">line of code</span>
+            </h1> */}
             <p className=" mb-9 text-white/80 capitalize text-base lg">
               Hello👋, i&#39;m Atere Damilola, a software developer based in Nigeria.
               
