@@ -207,7 +207,7 @@ export const experience = {
   items: [
     {
       company: "Freelancer",
-      position: "Frontend Developer",
+      position: "Software Developer",
       duration: "2023 - present",
     },
     {
