@@ -29,9 +29,6 @@ export const metadata = {
     "React.js",
     "Next.js",
   ],
-  authors: [{ name: "Atere Damilola", url: "https://ateredami.vercel.app" }],
-  themeColor: "https://ateredami.vercel.app",
-  metadataBase: new URL(""),
 };
 
 export default function RootLayout({ children }) {

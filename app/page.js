@@ -37,7 +37,7 @@ const Home = () => {
 
             {/* Subtext */}
             <p className="mb-9 text-white/80 capitalize text-base lg:text-lg">
-              Hello <span className="animate-wave">👋</span>, I'm Atere
+              Hello <span className="animate-wave">👋</span>, I&apos;m Atere
               Damilola, a Web Designer/Developer based in Nigeria.
             </p>
 
