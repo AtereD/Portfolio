@@ -115,7 +115,7 @@ export const links = [
     },
     {
         name: "projects",
-        path: "/projects"
+        path: "/services"
     },
     {
         name: "contact",
@@ -137,29 +137,29 @@ export const services = [
     title: "Frontend Web Development",
     description:
       "Building sleek, responsive websites with pixel-perfect precision and seamless user interactions",
-    href: "",
+    href: "/services/web-development",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
       "Designing intuitive, user-first interfaces that blend beauty with functionality across all devices",
-    href: "",
+    href: "/services/design",
   },
   // {
-  //   num: "03",
+  //   num: "04",
   //   title: "Logo Design",
   //   description:
   //     "Crafting bold, memorable logos that capture the essence of your brand in a single glance.",
   //   href: "",
   // },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Optimizing your online presence to climb search rankings and connect with the right audience.",
-    href: "",
-  },
+  // {
+  //   num: "03",
+  //   title: "SEO",
+  //   description:
+  //     "Optimizing your online presence to climb search rankings and connect with the right audience.",
+  //   href: "",
+  // },
 ];
 
 export const about = {
@@ -170,25 +170,25 @@ export const about = {
 
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Name:",
       fieldValue: "Atere Damilola",
     },
     {
-      fieldName: "Email",
+      fieldName: "Email:",
       fieldValue: "ateredamilola4d@gmail.com",
     },
     {
-      fieldName: "Name",
+      fieldName: "Phone:",
       fieldValue: "(+234) 912 168 1463",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experience:",
       fieldValue: "2 Years",
     },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Nigerian",
-    },
+    // {
+    //   fieldName: "Nationality:",
+    //   fieldValue: "Nigerian",
+    // },
     // {
     //   fieldName: "Freelance",
     //   fieldValue: "Available",
@@ -370,3 +370,28 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+
+export const design = [
+   {
+    id:1,
+    title: "Construction Company Website",
+   
+    iconLists: ["/fig.svg", ],
+    image: "/assets/design/wole-oke.png",
+    live: "https://wole-oke-construction.vercel.app/",
+  },
+  {
+    id:2,
+    title: "Travel Website",
+    iconLists: ["/fig.svg", ],
+    image: "/assets/design/travel.png",
+    live: "/"
+  },
+  {
+    id:2,
+    title: "Sales App",
+    iconLists: ["/fig.svg", ],
+    image: "/assets/design/salesapp.png",
+    live: "https://www.figma.com/design/5fnDo24XxgfVKLJnwp822M/Sales-App?node-id=0-1&t=1EszOnHqPlFmgYRn-1"
+  },
+]

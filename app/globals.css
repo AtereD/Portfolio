@@ -7,10 +7,32 @@
   --breakpoint-md: 760px;
   --breakpoint-lg: 968px;
   --breakpoint-xl: 1200px;
-  --color-primary: #0c0c0d;
-  --color-accent-DEFAULT: #eece1a;
+  --color-primary:#0a0014;
+  --color-accent-DEFAULT: #6600cc;
   --color-accent-hover: #bda207;
+  --color-text:#eae9eb;
+
 }
+
+@layer utilities {
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .animate-wave {
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+}
+
 
 @theme inline {
     --font-primary: var(--font-geist-sans);
@@ -18,8 +40,11 @@
 }
 
 @layer base {
+  * {
+    @apply scroll-smooth
+  }
   body {
-    @apply font-primary bg-primary/95 text-white leading-loose;
+    @apply font-primary bg-primary/95 text-text leading-loose;
   }
   .h1 {
     @apply text-[46px] lg:text-[50px] leading-[1.1] font-semibold;
@@ -31,11 +56,11 @@
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
   .text-outline {
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #eae9eb;
   }
   
   .text-outline-hover {
-    -webkit-text-stroke: 1px #eece1a;
+    -webkit-text-stroke: 1px #6600cc;
   }
   
 }
@@ -52,10 +77,10 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #eece1a !important;        /* Set the color */
+  color: #eae9eb !important;        /* Set the color */
   top: 50% !important;              /* Vertically center */
   transform: translateY(-50%) !important;
-  width: 40px;
+  width: 50px;
   height: 40px;
   border-radius: 50%;
   display: flex;
@@ -67,5 +92,6 @@
 .swiper-button-prev::after {
   font-size: 18px !important;       /* Adjust arrow size */
 }
+
 
 

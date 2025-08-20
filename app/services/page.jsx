@@ -7,7 +7,7 @@ import { services } from "@/constant";
 
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 lg:py-0">
+    <section className="w-full h-full flex flex-col justify-center lg:pt-12 lg:pb-8 py-8" id="services">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -15,7 +15,7 @@ const Services = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
+          className="grid grid-cols-1 md:grid-cols-2 gap-[50px] "
         >
           {services.map((service, index) => {
             return (
@@ -28,12 +28,12 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 ">
                     {service.num}
                   </div>
-                  {/* <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent-DEFAULT transition-all duration-500 flex justify-center items-center hover:-rotate-45 ">
+                  <Link href={service.href} className="w-[50px] h-[50px] rounded-full bg-white group-hover:bg-accent-DEFAULT transition-all duration-500 flex justify-center items-center hover:-rotate-45 ">
                     <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link> */}
+                  </Link>
                 </div>
                 {/* title */}
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-DEFAULT transition-all duration-500">
+                <h2 className="text-[40px] font-bold leading-none text-white group-hover:text-accent-DEFAULT transition-all duration-500">
                   {service.title}
                 </h2>
                 {/* description */}

@@ -1,16 +1,10 @@
-import { JetBrains_Mono, Geist, Geist_Mono, } from "next/font/google";
+import { Geist, Geist_Mono, } from "next/font/google";
 import "./globals.css";
 
-//Components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
-// const jetbrainsMono = JetBrains_Mono({
-//   variable: "--font-jetbrainsMono",
-//   subsets: ["latin"],
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
-// });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +20,18 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Atere Damilola",
   description: "Atere Damilola's portfolio website.",
+   keywords: [
+    "Atere Damilola",
+    "Portfolio",
+    "Software Developer",
+    "Web Designer",
+    "Frontend Web Developer",
+    "React.js",
+    "Next.js",
+  ],
+  authors: [{ name: "Atere Damilola", url: "https://ateredami.vercel.app" }],
+  themeColor: "https://ateredami.vercel.app",
+  metadataBase: new URL(""),
 };
 
 export default function RootLayout({ children }) {
@@ -35,7 +41,7 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/dami_logo.ico' type='icon'/>
       </head>
       <body
-        className={`${geistSans.variable}  py-2 px-3 xl:px-2`}
+        className={`${geistSans.variable} px-2 lg:px-0 py-2 flex flex-col gap-30 xl:gap-34`}
       >
         <Header />
         <StairTransition />
