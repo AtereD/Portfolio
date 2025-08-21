@@ -14,22 +14,22 @@ import { design } from "@/constant";
 import { PinContainer } from "@/components/ui/Pin";
 
 const BackButton = () => (
-  <div className="flex gap-4 items-center justify-center ml-3">
+  <div className="flex gap-4 items-center justify-center ">
     <Link href="/services">
       <FaArrowLeft className="animate-wave" />
     </Link>
-    <p className="text-sm md:text-base">Go back</p>
+    <p className="text-base md:text-lg">Go back</p>
   </div>
 );
 
 const DesignCard = ({ item }) => (
-  <PinContainer>
+  <PinContainer className="w-full h-full">
     {/* Image wrapper */}
-    <div className="relative flex items-center justify-center w-[80vw] sm:w-96 h-[80vh] sm:h-[80vh] overflow-hidden mb-8 rounded-lg">
+    <div className="relative flex items-center lg:justify-center w-[80vw] sm:w-96 h-[60vh] sm:h-[80vh] overflow-hidden mb-8 rounded-lg">
       <img
         src={item.image}
         alt={item.title}
-        className="absolute bottom-0 z-10 object-contain"
+        className=" z-10 object-contain absolute bottom-0 "
       />
     </div>
 
@@ -37,14 +37,6 @@ const DesignCard = ({ item }) => (
     <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
       {item.title}
     </h1>
-
-    {/* Description */}
-    <p
-      className="text-sm lg:text-base font-light lg:font-normal line-clamp-1 my-2"
-      style={{ color: "#BEC1DD" }}
-    >
-      {item.description}
-    </p>
 
     {/* Icons + Live link */}
     <div className="flex items-center justify-between mt-7 mb-6">
@@ -87,10 +79,10 @@ const Design = () => {
       <BackButton />
 
       {/* Swiper section */}
-      <div className="relative flex flex-wrap justify-center px-4 py-4 gap-x-24 md:gap-y-2">
+      <div className="relative flex flex-wrap justify-center px-4 py-4 gap-x-24 lg:gap-y-2">
         <Swiper
           spaceBetween={20}
-          breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 } }}
+          breakpoints={{ 0: { slidesPerView: 1 }, 968: { slidesPerView: 2 } }}
           navigation
           modules={[Navigation]}
           className="mySwiper w-full h-full"

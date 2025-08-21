@@ -23,7 +23,7 @@ const Web = () => {
         opacity: 1,
         transition: { delay: 0.4, duration: 0.6, ease: "easeInOut" },
       }}
-      className="flex flex-col gap-10"
+      className="flex flex-col sm:gap-10 gap-8"
     >
       {/* Back button */}
       <div className="flex gap-3 items-center justify-center">
@@ -39,7 +39,7 @@ const Web = () => {
           spaceBetween={20}
           breakpoints={{
             0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
+            968: { slidesPerView: 2 },
           }}
           navigation
           modules={[Navigation, Autoplay]}
@@ -54,12 +54,12 @@ const Web = () => {
                 viewport={{ once: true }}
               >
                 <PinContainer title={item.live} href={item.link}>
-                  <div className="relative flex items-center justify-center w-[90vw] sm:w-96 h-[90vh] sm:h-[80vh] overflow-hidden mb-8">
+                  <div className="relative flex items-center lg:justify-center w-[80vw] sm:w-96 h-[60vh] sm:h-[80vh] overflow-hidden rounded-lg">
                     <Image
                       src={item.image}
                       alt={`${item.title} screenshot`}
                       fill
-                      className="object-cover rounded-lg"
+                      className="z-10 object-contain absolute bottom-0 "
                     />
                   </div>
 
@@ -68,13 +68,6 @@ const Web = () => {
                     {item.title}
                   </h1>
 
-                  {/* Description */}
-                  <p
-                    className="text-sm lg:text-base font-light lg:font-normal line-clamp-2"
-                    style={{ color: "#BEC1DD", margin: "1vh 0" }}
-                  >
-                    {item.description}
-                  </p>
 
                   {/* Tech + Live link */}
                   <div className="flex items-center justify-between mt-6 mb-3">

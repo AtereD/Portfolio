@@ -10,11 +10,11 @@ const MobileNav = () => {
   const pathname = usePathname();
 
   return (
-    <Sheet>
+    <Sheet className="bg-transparent">
       {/* Menu Button */}
       <SheetTrigger
         aria-label="Open navigation menu"
-        className="flex items-center justify-center"
+        className="flex items-center justify-center bg-transparent"
       >
         <CiMenuFries className="text-[32px] text-accent-DEFAULT" />
       </SheetTrigger>

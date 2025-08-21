@@ -385,7 +385,7 @@ export const design = [
     title: "Travel Website",
     iconLists: ["/fig.svg", ],
     image: "/assets/design/travel.png",
-    live: "/"
+    live: "https://www.figma.com/design/NPCzFPPdgxaRaRMNq61rk4/Travel-Website?node-id=0-1&t=9BbA3UXIia35hSqJ-1"
   },
   {
     id:2,
