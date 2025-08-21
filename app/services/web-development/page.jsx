@@ -54,7 +54,7 @@ const Web = () => {
                 viewport={{ once: true }}
               >
                 <PinContainer title={item.live} href={item.link}>
-                  <div className="relative flex items-center justify-center w-[80vw] sm:w-96 h-[80vh] sm:h-[80vh] overflow-hidden mb-8">
+                  <div className="relative flex items-center justify-center w-[90vw] sm:w-96 h-[90vh] sm:h-[80vh] overflow-hidden mb-8">
                     <Image
                       src={item.image}
                       alt={`${item.title} screenshot`}

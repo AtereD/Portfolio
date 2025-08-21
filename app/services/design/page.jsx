@@ -26,8 +26,6 @@ const DesignCard = ({ item }) => (
   <PinContainer>
     {/* Image wrapper */}
     <div className="relative flex items-center justify-center w-[80vw] sm:w-96 h-[80vh] sm:h-[80vh] overflow-hidden mb-8 rounded-lg">
-      {/* Purple overlay */}
-      <div className="absolute inset-0 bg-[#6600cc]/70" />
       <img
         src={item.image}
         alt={item.title}
@@ -94,8 +92,7 @@ const Design = () => {
           spaceBetween={20}
           breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 } }}
           navigation
-          pagination={{ clickable: true }}
-          modules={[Navigation, Pagination]}
+          modules={[Navigation]}
           className="mySwiper w-full h-full"
         >
           {design.map((item) => (
