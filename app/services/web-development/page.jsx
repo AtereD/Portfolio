@@ -59,12 +59,12 @@ const Web = () => {
                       src={item.image}
                       alt={`${item.title} screenshot`}
                       fill
-                      className="z-10 object-contain absolute bottom-0 "
+                      className="z-10 absolute bottom-0 object-cover"
                     />
                   </div>
 
                   {/* Title */}
-                  <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                  <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 mt-2">
                     {item.title}
                   </h1>
 
