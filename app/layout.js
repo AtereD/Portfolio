@@ -1,9 +1,8 @@
 import { Geist, Geist_Mono, } from "next/font/google";
 import "./globals.css";
 
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import StairTransition from "@/components/StairTransition";
+import ResponsiveNav from "@/components/Navbar/ResponsiveNav";
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({
@@ -38,11 +37,11 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/dami_logo.ico' type='icon'/>
       </head>
       <body
-        className={`${geistSans.variable} px-2 lg:px-0 py-2 flex flex-col gap-30 xl:gap-34`}
+        className={`${geistSans.variable}`}
       >
-        <Header />
-        <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <ResponsiveNav />
+       {children}
+       <Footer/>
       </body>
     </html>
   );

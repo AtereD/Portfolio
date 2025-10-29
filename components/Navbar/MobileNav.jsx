@@ -1,6 +1,6 @@
 "use client";
 
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
@@ -20,12 +20,12 @@ const MobileNav = () => {
       </SheetTrigger>
 
       {/* Slide-in Navigation */}
-      <SheetContent className="flex flex-col items-center justify-center">
+      <SheetContent className="flex flex-col items-center justify-center bg-accent-DEFAULT text-primary">
         {/* Logo */}
         <div className="mt-16 text-center text-2xl">
           <Link href="/" aria-label="Home">
-            <h1 className="text-4xl font-semibold">
-              Dami<span className="text-accent-DEFAULT">.</span>
+            <h1 className="text-4xl font-semibold ">
+              Dami<span className="text-purple-900">.</span>
             </h1>
           </Link>
         </div>
@@ -41,10 +41,10 @@ const MobileNav = () => {
               <Link
                 key={index}
                 href={link.path}
-                className={`capitalize text-xl transition-all hover:text-accent-DEFAULT ${
+                className={`capitalize text-xl transition-all  ${
                   isActive
-                    ? "text-accent-DEFAULT border-b-2 border-accent-DEFAULT"
-                    : ""
+                    ? "text-gray-200 border-b-2 border-purple-900 hover:text-gray-200"
+                    : "hover:text-primary/50"
                 }`}
               >
                 {link.name}

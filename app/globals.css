@@ -7,10 +7,9 @@
   --breakpoint-md: 760px;
   --breakpoint-lg: 968px;
   --breakpoint-xl: 1200px;
-  --color-primary:#0a0014;
-  --color-accent-DEFAULT: #6600cc;
-  --color-accent-hover: #bda207;
-  --color-text:#eae9eb;
+  --color-primary:#ffffff;
+  --color-accent-DEFAULT: #101828;
+  --color-text:#101828;
 
 }
 
@@ -60,7 +59,7 @@
   }
   
   .text-outline-hover {
-    -webkit-text-stroke: 1px #6600cc;
+    -webkit-text-stroke: 1px #101828;
   }
   
 }

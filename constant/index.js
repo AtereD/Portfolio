@@ -110,12 +110,12 @@ export const links = [
     //     path: "/services"
     // },
     {
-        name: "resume",
-        path: "/resume"
+        name: "About Me",
+        path: "/#resume"
     },
     {
         name: "projects",
-        path: "/services"
+        path: "/#work"
     },
     {
         name: "contact",
@@ -165,7 +165,7 @@ export const services = [
 export const about = {
   title: "About me",
   description:
-    "Hey there👋! I’m Damilola, but most people call me Atere/Dami😊. I'm a software developer who enjoys building clean, responsive, and user-friendly websites. I work mostly with HTML, CSS, JavaScript, React, TailwindCSS and Next.js, tools I use to bring ideas and designs to life in the browser. I love working on projects that focus on great user experiences and strong design. Whether I’m listening to a music, coding solo or collaborating with a team, I find joy in turning creative concepts into real, working products that people enjoy using.",
+    "Hey there👋! I’m Damilola, but most people call me Atere/Dami😊. I'm a software developer who enjoys building clean, responsive, and user-friendly websites. I work mostly with HTML, CSS, JS/TS, React.js, TailwindCSS and Next.js, tools I use to bring ideas and designs to life in the browser. I love working on projects that focus on great user experiences and strong design. Whether I’m coding solo or collaborating with a team, I find joy in turning creative concepts into real, working products that people enjoy using.",
 
 
   info: [
@@ -178,10 +178,6 @@ export const about = {
       fieldValue: "ateredamilola4d@gmail.com",
     },
     {
-      fieldName: "Phone:",
-      fieldValue: "(+234) 912 168 1463",
-    },
-    {
       fieldName: "Experience:",
       fieldValue: "2 Years",
     },
@@ -189,10 +185,10 @@ export const about = {
     //   fieldName: "Nationality:",
     //   fieldValue: "Nigerian",
     // },
-    // {
-    //   fieldName: "Freelance",
-    //   fieldValue: "Available",
-    // },
+    {
+      fieldName: "Freelance:",
+      fieldValue: "Available",
+    },
     // {
     //   fieldName: "Language",
     //   fieldValue: "English & Yoruba",
@@ -207,7 +203,7 @@ export const experience = {
   items: [
     {
       company: "Freelancer",
-      position: "Software Developer",
+      position: "Web Developer",
       duration: "2023 - present",
     },
     {
@@ -236,8 +232,9 @@ export const experience = {
 export const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:"My journey in tech began with a Computer Science degree and continued through self-taught development, driven by curiosity and practical learning. As I grow in the field, I’m now focusing on earning certifications that reflect my skills and commitment to professional growth.",
-    // "My educational path combines formal academic studies with self-driven learning through online platforms. From earning a Computer Science degree to mastering frontend technologies via Coursera, and project-based courses, I’ve built a strong foundation in both theory and hands-on development.",
+   description:
+   //"My journey in tech began with a Computer Science degree and continued through self-taught development, driven by curiosity and practical learning. As I grow in the field, I’m now focusing on earning certifications that reflect my skills and commitment to professional growth.",
+    "My educational path combines formal academic studies with self-driven learning through online platforms. From earning a Computer Science degree to mastering frontend technologies via Coursera and Youtube, I’ve built a strong foundation in both theory and hands-on development.",
   items: [
     // {
     //   Institution: "Online Course Platform",
@@ -249,16 +246,16 @@ export const education = {
       position: " Bachelor in Computer Science",
       duration: "2018 - 2022",
     },
-    {
-      Institution: "Online Course Platform (Coursera))",
-      position: " Intro to Software Engineering",
-      // duration: "2024",
-    },
-    {
-      Institution: "Online Course Platform (Coursera)",
-      position: "Getting Started with Frontend and Web Development",
-      // duration: "2024",
-    },
+    // {
+    //   Institution: "Online Course Platform (Coursera))",
+    //   position: " Intro to Software Engineering",
+    //   // duration: "2024",
+    // },
+    // {
+    //   Institution: "Online Course Platform (Coursera)",
+    //   position: "Getting Started with Frontend and Web Development",
+    //   // duration: "2024",
+    // },
     
   ],
 };

@@ -10,10 +10,10 @@ const Nav = () => {
     console.log(pathname)
 
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 ml-auto">
         {links.map((link, index)=> {
             return (
-                <Link href={link.path} key={index}className={`${link.path === pathname && "text-accent-DEFAULT border-b-2 border-accent-DEFAULT" } capitalize font-medium hover:text-accent-DEFAULT transition-all`}>
+                <Link href={link.path} key={index}className={`${link.path === pathname && "text-accent-DEFAULT border-b-2 border-accent-DEFAULT" } capitalize font-medium hover:text-purple-900 transition-all`}>
                     {link.name}
                 </Link>
             )
