@@ -4,13 +4,13 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-text text-white py-12 px-4 lg:px-0">
+    <footer className="bg-text text-white pt-12 px-4 lg:px-0 mb-0 pb-10">
       <section className="container mx-auto">
         {/* Title */}
         <h2 className="text-4xl mb-8 font-medium">I can help you with</h2>
 
         {/* Services */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
           {/* Design */}
           <div>
             <p className="text-gray-500 border-b border-gray-500 w-fit">01</p>
@@ -54,7 +54,7 @@ const Footer = () => {
 
         {/* Contact Section */}
 
-        <div className="flex flex-wrap items-center gap-3 my-8">
+        <div className="flex flex-wrap items-center gap-3 mb-8">
           <img
             src="/assets/img.png"
             alt="Atere Damilola"
@@ -94,7 +94,7 @@ const Footer = () => {
           Social Media
         </p>
 
-        <div className="flex justify-between items-center flex-wrap gap-4">
+        <div className="flex justify-between items-center  gap-4">
           <Socials
             containerStyles="flex gap-2 items-center"
             iconStyles="bg-purple-900 p-2 rounded-full text-primary hover:scale-90 transition duration-300"

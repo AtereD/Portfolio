@@ -89,7 +89,7 @@ const Contact = () => {
             action="https://formsubmit.co/dc7abb080f58ee94328c6262046c8e1a"
             method="POST"
             target="_blank"
-            className="flex flex-col gap-6 md:p-6 bg-text rounded-xl py-8 px-5 lg:w-1/2 w-full h-[450px] items-center"
+            className="flex flex-col gap-6 md:p-6 bg-text rounded-xl py-8 px-5 lg:w-1/2 w-full lg:h-[450px] lg:items-center"
           >
             <h3 className="text-primary text-center text-3xl md:text-4xl">
               Let&apos;s work together!!
