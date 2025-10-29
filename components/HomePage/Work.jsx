@@ -191,10 +191,10 @@ const Work = () => {
           {filteredProjects.map((item, index) => (
             <div
               key={index}
-              className={`rounded-lg bg-gray-900 backdrop-blur-sm border border-white/10 p-4 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10
+              className={`rounded-lg bg-gray-900 backdrop-blur-sm border border-white/10 p-4 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 w-full
       ${
         viewType === "list"
-          ? "flex items-center gap-6"
+          ? "flex items-center gap-4 lg:gap-6 justify-between w-full"
           : "flex flex-col items-start"
       }
     `}

@@ -34,19 +34,20 @@ export const projects = [
     id:1,
     title: "Wole-Oke Construction",
     description:
-      "This website was created for a construction company that provides services ranging from engineering to consultations, construction and so much more",
+      "This website is created for a construction company that provides services ranging from engineering to consultations, construction and so much more",
     iconLists: ["/next.svg", "/tail.svg", ],
     image: "/assets/work/construction.svg",
     live: "https://wole-oke-construction.vercel.app/",
   },
   {
-     id:2,
-    title: "viRtual Website",
+    id:5,
+    title: "LinguaEd",
     description:
-      "",
-    iconLists: ["/vite.svg", "/tail.svg", ],
-    image: "/assets/work/virtual.svg",
-    live: "https://virtual-tau-ecru.vercel.app/"
+      "LinguaEd is a mock e-learning platform that was built Using Next JS, and Tailwing CSS",
+    iconLists: ["/next.svg", "/tail.svg", ],
+    image: "/assets/work/thumb2.png",
+    live: "https://lingua-ed.vercel.app/",
+   
   },
   {
     id:3,
@@ -69,26 +70,6 @@ export const projects = [
     
   },
   {
-    id:5,
-    title: "LinguaEd",
-    description:
-      "LinguaEd was Built Using Next JS, and Tailwing CSS",
-    iconLists: ["/next.svg", "/tail.svg", ],
-    image: "/assets/work/thumb2.png",
-    live: "https://lingua-ed.vercel.app/",
-   
-  },
-  {
-    id:6,
-    title: "Typescript(EVOGYM Website)",
-    description:
-      "Evogym is a responsive landing page built with typescript, react.js. tailwind css and framer motion",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg" ],
-    image: "/assets/work/thumb4.png",
-    live: "https://evo-typescript.netlify.app/",
-  
-  },
-  {
     id:7,
     title: "Weather App",
     description:
@@ -105,10 +86,6 @@ export const links = [
         name: "home",
         path: "/"
     },
-    // {
-    //     name: "services",
-    //     path: "/services"
-    // },
     {
         name: "About Me",
         path: "/#resume"
@@ -375,7 +352,7 @@ export const design = [
    
     iconLists: ["/fig.svg", ],
     image: "/assets/design/wole-oke.png",
-    live: "https://wole-oke-construction.vercel.app/",
+    live: "https://www.figma.com/design/kcH3MthUiqGbirrrKEsqeN/WOLE-OKE-Const.-Company-LTD?node-id=5-24&t=7bBp5eH67lwgjzDu-1",
   },
   {
     id:2,
