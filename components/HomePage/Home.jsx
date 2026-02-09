@@ -48,7 +48,7 @@ const Home = () => {
                 Start a project
               </p>
               <a
-                class="bg-purple-900 text-white p-4 rounded-full hover:opacity-80 group"
+                className="bg-purple-900 text-white p-4 rounded-full hover:opacity-80 group"
                 href="/contact"
               >
                 <svg
@@ -59,35 +59,35 @@ const Home = () => {
                   className="-rotate-45 group-hover:rotate-0 transition"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
                     <path
                       d="M5 12H19M19 12L13 6M19 12L13 18"
                       stroke="#ffffff"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></path>{" "}
                   </g>
                 </svg>
               </a>
             </div>
 
-            <section class="container mx-auto  xl:px-12">
-              <div class="md:max-w-2xl ml-auto lg:max-w-3xl  xl:max-w-4xl">
-                <h3 class="text-2xl leading-9 my-6">
+            <section className="container mx-auto  xl:px-12">
+              <div className="md:max-w-2xl ml-auto lg:max-w-3xl  xl:max-w-4xl">
+                <h3 className="text-2xl leading-9 my-6">
                   Welcome, make yourself comfortable, I am a web developer, I
                   design and build beautiful digital products, for companies
                   around the world.
                 </h3>
 
-                <p class="my-4">
+                <p className="my-4">
                   I believe that design should be both functional and
                   aesthetically pleasing, and I am dedicated to delivering
                   exceptional user experiences through thoughtul design and
@@ -95,34 +95,34 @@ const Home = () => {
                 </p>
                 <div>
                   <p
-                  class="flex gap-2 items-center font-semibold underline "
+                  className="flex gap-2 items-center font-semibold underline "
                 >
                  Download Resume
                   <a href="/cv.pdf"
                   download="Atere_Damilola_CV.pdf"
-                  target="_blank" class="bg-purple-900 text-white p-2 rounded-full hover:opacity-80 group">
+                  target="_blank" className="bg-purple-900 text-white p-2 rounded-full hover:opacity-80 group">
                     <svg
                       viewBox="0 0 24 24"
                       width="18"
                       height="18"
                       fill="none"
-                      class="-rotate-45 group-hover:rotate-0 transition"
+                      className="-rotate-45 group-hover:rotate-0 transition"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
                         <path
                           d="M5 12H19M19 12L13 6M19 12L13 18"
                           stroke="#ffffff"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>{" "}
                       </g>
                     </svg>
