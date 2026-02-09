@@ -4,7 +4,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-text text-white pt-12 px-4 lg:px-0 mb-0 pb-10">
+    <footer className="bg-text text-white pt-12 px-4 xl:px-0 mb-0 pb-10 mt-auto">
       <section className="container mx-auto">
         {/* Title */}
         <h2 className="text-4xl mb-8 font-medium">I can help you with</h2>
@@ -101,7 +101,7 @@ const Footer = () => {
           />
 
           <a
-            href="#top"
+            href="#"
             className="rounded-full bg-purple-900 p-3 hover:bg-purple-800 transition-colors animate-bounce"
           >
             <FaArrowUp />

@@ -17,7 +17,7 @@ const Home = () => {
             {/* Typewriter Title */}
             <span className="text-lg">
               <Typewriter
-                words={["Frontend Web Developer", "UI/UX Designer"]}
+                words={["Web Developer", "UI/UX Designer"]}
                 loop={0} // 0 = infinite
                 cursor
                 cursorStyle="|"

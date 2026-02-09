@@ -5,7 +5,7 @@ import Work from "@/components/HomePage/Work";
 
 const PortfolioPage = () => {
   return (
-    <main className="relative px-2 lg:px-0 w-full h-full">
+    <main className="relative px-2 xl:px-0 w-full h-full">
 
       {/* Page Sections */}
       <section id="home">

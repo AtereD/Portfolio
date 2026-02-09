@@ -26,7 +26,7 @@ const About = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]"
+          className="flex flex-col lg:flex-row gap-[60px]"
         >
           {/* Sidebar tabs */}
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-8">

@@ -40,14 +40,34 @@ export const projects = [
     live: "https://wole-oke-construction.vercel.app/",
   },
   {
-    id:5,
-    title: "LinguaEd",
+    id:4,
+    title: "Deebrew Coffee Website",
     description:
-      "LinguaEd is a mock e-learning platform that was built Using Next JS, and Tailwing CSS",
-    iconLists: ["/next.svg", "/tail.svg", ],
-    image: "/assets/work/thumb2.png",
-    live: "https://lingua-ed.vercel.app/",
+      "Developed a responsive modern website for DeeBrew, a coffee brand with Next.js and Tailwindcss",
+    iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
+    image: "/assets/work/thumb1.png",
+    live: "https://deebrew-landing.vercel.app/",
+    
+  },
+  // {
+  //   id:5,
+  //   title: "LinguaEd",
+  //   description:
+  //     "LinguaEd is a mock e-learning platform that was built Using Next JS, and Tailwing CSS",
+  //   iconLists: ["/next.svg", "/tail.svg", ],
+  //   image: "/assets/work/thumb2.png",
+  //   live: "https://lingua-ed.vercel.app/",
    
+  // },
+   {
+    id:7,
+    title: "Weather App",
+    description:
+      "This Weather App Was Built Using React JS, Tailwind CSS and OpenWeatherMap API",
+    iconLists: ["/re.svg", "/tail.svg", ],
+    image: "/assets/work/thumb3.png",
+    live: "https://dweatherapp.netlify.app/",
+    
   },
   {
     id:3,
@@ -59,26 +79,7 @@ export const projects = [
     live: "https://react-admin89.netlify.app",
    
   },
-  {
-    id:4,
-    title: "Deebrew Coffee Website",
-    description:
-      "Developed a responsive modern website for DeeBrew, a coffee brand with Next.js and Tailwindcss",
-    iconLists: ["/re.svg", "/tail.svg", "/gsap.svg"],
-    image: "/assets/work/thumb1.png",
-    live: "https://deebrew-landing.vercel.app/",
-    
-  },
-  {
-    id:7,
-    title: "Weather App",
-    description:
-      "This Weather App Was Built Using React JS, Tailwind CSS and OpenWeatherMap API",
-    iconLists: ["/re.svg", "/tail.svg", ],
-    image: "/assets/work/thumb3.png",
-    live: "https://dweatherapp.netlify.app/",
-    
-  },
+ 
 ];
 
 export const links = [

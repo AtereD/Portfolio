@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/dami_logo.ico' type='icon'/>
       </head>
       <body
-        className={`${geistSans.variable}`}
+        className={`${geistSans.variable} flex flex-col min-h-screen`}
       >
         <ResponsiveNav />
        {children}
